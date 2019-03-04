@@ -1,12 +1,37 @@
+body{
+  background : #0B0C10;
+}
+
+h1{
+ color: #66fcf1;
+}
+
+h2{
+ color: #66fcf1;
+}
+
+h3{
+  color: #66fcf1;
+}
+
+p{
+  color: #45A29E;
+}
+
+li{
+  color: #45A29E;
+}
+
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 1px solid #1F2833;
+  background-color: #1F2833;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
+  color : #C5C6C7;
   float: left;
   border: none;
   outline: none;
