@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="./styling/styling.css">
+</head>
+
+<body>
+
+  <h1>Craig Campbell's Website</h1>
+
+
+  <div class="tab">
+    <button class="sectionlinks" onclick="openSection(event, 'home')" id="defaultOpen">Home</button>
+    <button class="sectionlinks" onclick="openSection(event, 'progress')">Current Projects</button>
+    <button class="sectionlinks" onclick="openSection(event, 'resume')">Resume</button>
+    <button class="sectionlinks" onclick="openSection(event, 'contact')">Contact</button>
+    <button class="sectionlinks" onclick="openSection(event, 'albumRecommendations')"> Album Recommendations </button>
+    <button class="sectionlinks" onclick="openSection(event, 'movieRecommendations')"> Movie Recommendations </button>
+    <button class="sectionlinks" onclick="openSection(event, 'funCode')"> Fun Code </button>
+    <button class="sectionlinks" onclick="openSection(event, 'helpfulLinks')"> Helpful Links</button>
+  </div>
+
+
+  <div id="home" class="tabcontent">
+    <h2>Home/About Me</h2>
+    <p> 
+      Hello My Name is Craig Campbell <br />
+      Currently I am enrolled in the Data Science and Analytics Program at <br />
+      Eastern  Michigan University <br />
+      Currently I am set to to attend Graduate School here as well in <br />
+      Computer Science!!!
+    </p>
+
+    <p>
+     <h3>My Current Hobbies include: </h3> 
+      <ul>
+        <li> Programming</li>
+        <li> Runescape</li>
+        <li> PUBG</li>
+        <li> Listening To Music</li>
+        <li> Watching Movies </li>
+      </ul>
+    </p>
+
+    <p>
+      <h3>Academic Interests:</h3>
+        <ol>
+          <li>Computer Science:</li>
+            <ul><li>Object Oriented Design</li></ul>
+            <ul><li>Algorithms</li></ul>
+            <ul><li>Databases</li></ul>
+            <ul><li>Machine Learning</li></ul>
+          <li>Mathematics</li>
+            <ul><li>Calclus</li></ul>
+            <ul><li>Statistics</li></ul>
+            <ul><li>Crytography</li></ul>
+          <li>Chemistry</li>
+          <ul><li>General Chemistry</li></ul>
+          <ul><li>Organic Chemistry</li></ul>
+        </ol>
+    </p>
+
+  </div>
+
+  <div id="progress" class="tabcontent"> 
+    <h3>Current Projects / Progress</h3>
+    <p> Place Holder Content! Tab Works!</p>
+  </div>
+
+  <div id="resume" class="tabcontent">
+    <h3>A Resume of Sorts</h3>
+    <p> Place Holder Content! Tab Works!</p>
+  </div>
+
+  <div id="contact" class="tabcontent">
+    <h3>Contact Informations</h3>
+    <p> Place Holder Content! Tab Works!</p>
+  </div>
+
+  <div id="albumRecommendations" class="tabcontent">
+    <h3>Album Recommendations</h3>
+    <p> Place Holder Content! Tab Works!</p>
+    <ul>
+      <li>Tony Molina's Dissed and Dismissed (2014)</li> <br />
+    <iframe src="https://open.spotify.com/embed/album/6zmGy8l0Xz4Snqn00zLSQq" width="300" height="380" class="album"
+    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </ul>
+    <ul>
+      <li> Yves Tumor's Safe in the Hands of Love (2018) </li> <br />
+      <iframe src="https://open.spotify.com/embed/album/1IpYZkYoYCjXTYMDEW8Ksk" width="300" height="380" 
+      frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </ul>  
+      <ul>
+      <li>Danny Brown's Old (2013)</li> <br />
+      <iframe src="https://open.spotify.com/embed/album/5SC0415RIGVX9ZfL0tfbAl" width="300" height="380" 
+      frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </ul>
+  </div>
+
+ <div id="movieRecommendations" class="tabcontent">
+   <p>PlaceHolder Works!</p>
+ </div>
+
+  <div id="funCode" class="tabcontent">
+    <h3>Fun Code </h3>
+    <p> Place Holder Content! Tab Works!</p>
+  </div>
+
+  <div id="helpfulLinks" class="tabcontent">
+    <h3>Helpful Links</h3>
+    <ul>
+      <li><a href="http://devdocs.io"> Dev Docs</a></li>
+
+    </ul>
+  </div>
+
+  <script>
+  function openSection(evt, sectionName) {
+    
+    var i, tabcontent, sectionlinks;
+  
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    sectionlinks = document.getElementsByClassName("sectionlinks");
+    for (i = 0; i < sectionlinks.length; i++) {
+      sectionlinks[i].className = sectionlinks[i].className.replace(" active", "");
+    }
+  
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+  
+<script>
+  document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
