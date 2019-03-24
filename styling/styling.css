@@ -17,7 +17,17 @@ p{
 li{
   color: #45A29E;
 }
+div{
+  color: #45A29E;
+}
 
+span{
+  color: #45A29E;
+}
+
+code{
+  color: #45A29E;
+}
 
 .tab {
   overflow: hidden;
